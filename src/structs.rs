@@ -9,11 +9,11 @@ struct Person {
 
 impl Person {
     pub fn get_age(&self) -> u8 {
-        todo!()
+        self.age
     }
 
     pub fn birthday(&mut self) {
-        todo!()
+        self.age += 1;
     }
 
     // An example ;)
