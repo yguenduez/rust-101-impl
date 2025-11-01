@@ -1,3 +1,5 @@
+use core::num;
+
 // Example for a free function
 pub fn times_3(number: i32) -> i32 {
     3 * number
@@ -5,11 +7,11 @@ pub fn times_3(number: i32) -> i32 {
 
 // E.g.: 2^2=4
 pub fn power_2(number: i32) -> i32 {
-    todo!()
+    number.pow(2)
 }
 
 pub fn get_max(first: i64, second: i64) -> i64 {
-    todo!()
+    first.max(second)
 }
 
 // Those two return statements are equivalent
@@ -19,7 +21,7 @@ pub fn hello(name: String) -> String {
 }
 
 pub fn welcome_to_rust(people: String) -> String {
-    todo!()
+    format!("Welcome People of {people} and enjoy some Rust")
 }
 
 #[cfg(test)]
