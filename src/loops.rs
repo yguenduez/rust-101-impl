@@ -30,17 +30,17 @@ fn sum_over_vector_functional(vector: &[i32]) -> i32 {
 
 /// This is your task: concatinate the incoming words
 fn concat_words_functional(words: &[&str]) -> String {
-    words.iter().fold(String::new(), |mut string, x| {
-        todo!()
-    })
+    words.iter().fold(String::new(), |mut string, x| todo!())
 }
 
 #[cfg(test)]
 mod test {
-    use crate::loops::{concat_words_functional, loop_over_range, sum_over_vector, sum_over_vector_functional};
+    use crate::loops::{
+        concat_words_functional, loop_over_range, sum_over_vector, sum_over_vector_functional,
+    };
 
     #[test]
-    fn loop_over_range_works(){
+    fn loop_over_range_works() {
         assert_eq!(loop_over_range(), 14)
     }
 
